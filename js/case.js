@@ -34,6 +34,10 @@ document.getElementById('btn_case_plus').addEventListener('click', function () {
     updateCase(true);
 });
 
+document.getElementById('remove_field').addEventListener('click', function () {
+    const removeField = document.getElementById('case_remove');
+    removeField.innerText = '';
+})
 /**
  * step-B.1: add event handler with case section - icon
  * step-B.2: get input field value from case section
@@ -43,6 +47,7 @@ document.getElementById('btn_case_plus').addEventListener('click', function () {
 document.getElementById('btn_case_minus').addEventListener('click', function () {
     updateCase(false);
 });
+
 
 /**
  * step-C.1: 

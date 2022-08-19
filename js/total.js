@@ -96,3 +96,10 @@ document.getElementById('btn_case_minus').addEventListener('click', function () 
     const finalValue = Value + taxValue;
     setValue('final_total', finalValue);
 });
+
+document.getElementById('remove_field').addEventListener('click', function () {
+    const removeField = document.getElementById('case_remove');
+    removeField.innerText = '';
+    const caseTotal = getElementById('case_per_price');
+    caseTotal.innerText = '';
+})
